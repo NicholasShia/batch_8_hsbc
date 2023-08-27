@@ -115,6 +115,29 @@ console.log(userAsal)
 
 
 // document.write(repeatKota)
+const bulan = ["Jan", "Feb", "Mar", "Apr", "Mei", "Jun", "Jul", "Ags", "Sep"]
+
+
+const options = {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+}
+const now = new Date()
+const formatIndo = now.toLocaleDateString('id-ID', options)
+const formatDatetimeIndo = now.toLocaleString('id-ID', options)
+
+console.log(formatDatetimeIndo)
+
+function tahunKabisat(year) {
+    return year % 4 === 0 ? 366 : 365
+}
+
+const expiredDate = 30
+
+const baru = new Date(1999, 2, 1)
+console.log(baru)
+
 
 
 
