@@ -17,6 +17,11 @@
 // dua()
 // tiga()
 
+setTimeout(() => {
+    const textElm = document.getElementById('text')
+    textElm.style = "display:none"
+}, 2000)
+
 function login(username) {
     return new Promise((success, failed) => {
         setTimeout(() => {

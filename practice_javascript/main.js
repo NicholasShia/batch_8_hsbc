@@ -4,6 +4,9 @@
 //     displayData(data)
 // })
 
+
+
+
 fetch('data.json').then(result => {
     const data = result
     console.log(data)
